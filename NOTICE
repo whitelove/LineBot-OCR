@@ -1,0 +1,23 @@
+LINE Bot Thai OCR
+
+Uses OpenThai2.0-OCR-Text by iApp Technology, Apache-2.0.
+https://huggingface.co/iapp/OpenThai2.0-OCR-Text
+Pinned revision: 39fa41bdd49f067ba41b1d9de79c06ab506d67d4
+
+The JavaScript OCR pipeline is a port/adaptation of the upstream Python
+runtime. Geometry, image sampling and bounded serverless execution differ.
+tests/reference/line_engine.py and thai_norm.py are unmodified upstream copies.
+
+Upstream NOTICE:
+
+OpenThai2.0-OCR-Text (iApp Technology)
+
+This model includes or is derived from the following Apache-2.0 licensed work:
+
+  PP-OCRv6_tiny_det, PP-OCRv6_tiny_rec, th_PP-OCRv5_mobile_rec (character list)
+  Copyright (c) PaddlePaddle Authors
+  https://huggingface.co/PaddlePaddle
+  Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+
+det.onnx is PP-OCRv6_tiny_det as distributed. rec.onnx is a fine-tune of
+PP-OCRv6_tiny_rec with a replaced Thai classifier, trained by iApp.
