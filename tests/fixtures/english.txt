@@ -1,0 +1,2 @@
+Hello LINE OCR 123
+Free text recognition
